@@ -40,6 +40,7 @@ Excellent for non-linear and complex datasets like California Housing. Learns pa
 Uses the concept of maximum margin from Support Vector Machines. Can use kernels (like RBF) to capture non-linear relationships. Needs feature scaling and can be slow for large datasets like California Housing (~20,000 rows). Performs decently (R² ≈ 0.73), showing it captures non-linearity but not as efficiently as ensemble trees.
 
 Models Evaluation and Comparison:
+
 Random Forest performs the best.
 *Lowest errors (MAE, MSE, RMSE).
 *Highest R² (0.805) → explains ~80% of variance.
