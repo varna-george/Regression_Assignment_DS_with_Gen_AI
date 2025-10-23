@@ -7,7 +7,8 @@ Dataset:
 Used California Housing dataset available in the sklearn library. This dataset contains information about various features of houses in California and their respective median prices.
 
 Key Components fulfilled:
-1. Loading and Preprocessing:
+
+Loading and Preprocessing:
 ● Loaded the California Housing dataset using the fetch_california_housing function from sklearn.
 ● Converted the dataset into a pandas DataFrame for easier handling.
 ● All the features are float and there are no categorical feature.
@@ -17,7 +18,7 @@ Linear Regression: Scaling (e.g., StandardScaler) makes sure all features are on
 Support Vector Regressor (SVR): Scaling ensures that each feature contributes proportionally to the distance measure.
 Decision Tree, Random Forest, Gradient Boosting: These models split data by feature thresholds, scaling has no effect on their performance.
 
-2. Regression Algorithm Implementation:
+Regression Algorithm Implementation:
 Implemented the following regression algorithms:
 
 ○ Linear Regression
@@ -37,7 +38,7 @@ Excellent for non-linear and complex datasets like California Housing. Learns pa
 ○ Support Vector Regressor (SVR)
 Uses the concept of maximum margin from Support Vector Machines. Can use kernels (like RBF) to capture non-linear relationships. Needs feature scaling and can be slow for large datasets like California Housing (~20,000 rows). Performs decently (R² ≈ 0.73), showing it captures non-linearity but not as efficiently as ensemble trees.
 
-3. Models Evaluation and Comparison:
+Models Evaluation and Comparison:
 Random Forest performs the best.
 *Lowest errors (MAE, MSE, RMSE).
 *Highest R² (0.805) → explains ~80% of variance.
