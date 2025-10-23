@@ -9,6 +9,7 @@ Used California Housing dataset available in the sklearn library. This dataset c
 Key Components fulfilled:
 
 Loading and Preprocessing:
+
 ● Loaded the California Housing dataset using the fetch_california_housing function from sklearn.
 ● Converted the dataset into a pandas DataFrame for easier handling.
 ● All the features are float and there are no categorical feature.
