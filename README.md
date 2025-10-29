@@ -22,22 +22,15 @@ Decision Tree, Random Forest, Gradient Boosting: These models split data by feat
 Regression Algorithm Implementation:
 Implemented the following regression algorithms:
 
-○ Linear Regression
-Linear Regression models the relationship between the target variable y and input features X as a straight line (a linear combination). It tries to find the best-fitting line that minimizes the sum of squared errors between predicted and actual values. California Housing dataset contains non-linear relationships (e.g., prices may rise quickly with income up to a point, then level off). Hence, Linear Regression gives reasonable but not top performance (R² ≈ 0.58).
+○ Linear Regression: Models the relationship between the target variable y and input features X as a straight line (a linear combination). It tries to find the best-fitting line that minimizes the sum of squared errors between predicted and actual values. California Housing dataset contains non-linear relationships (e.g., prices may rise quickly with income up to a point, then level off). Hence, Linear Regression gives reasonable but not top performance (R² ≈ 0.58).
 
-○ Decision Tree Regressor
-Splits the data recursively into smaller regions based on feature thresholds that reduce prediction error the most. Each terminal node (leaf) represents the predicted target value for samples in that region.
-Captures non-linear relationships and feature interactions automatically. Handles both large and small scales of data easily (no need for scaling). In this dataset, it performs better than Linear Regression, but it can overfit if not tuned (R² ≈ 0.62).
+○ Decision Tree Regressor: Splits the data recursively into smaller regions based on feature thresholds that reduce prediction error the most. Each terminal node (leaf) represents the predicted target value for samples in that region. Captures non-linear relationships and feature interactions automatically. Handles both large and small scales of data easily (no need for scaling). In this dataset, it performs better than Linear Regression, but it can overfit if not tuned (R² ≈ 0.62).
 
-○ Random Forest Regressor
-An ensemble of many Decision Trees trained on random subsets of data and features. The final prediction is the average of all trees’ predictions, reducing overfitting and variance. Works exceptionally well for tabular, mixed-scale, and non-linear data like this dataset. It captures complex relationships between features such as MedInc, AveRooms, and Population. Achieves highest accuracy (R² ≈ 0.81) because it generalizes well while maintaining low variance.
+○ Random Forest Regressor: An ensemble of many Decision Trees trained on random subsets of data and features. The final prediction is the average of all trees’ predictions, reducing overfitting and variance. Works exceptionally well for tabular, mixed-scale, and non-linear data like this dataset. It captures complex relationships between features such as MedInc, AveRooms, and Population. Achieves highest accuracy (R² ≈ 0.81) because it generalizes well while maintaining low variance.
 
-○ Gradient Boosting Regressor
-Builds an ensemble sequentially, where each new tree tries to correct the errors of the previous one. Combines weak learners (shallow trees) into a strong predictive model through gradient-based optimization.
-Excellent for non-linear and complex datasets like California Housing. Learns patterns iteratively and fine-tunes predictions. Performs slightly below Random Forest here (R² ≈ 0.78), but with proper tuning (learning rate, n_estimators), it can even surpass it.
+○ Gradient Boosting Regressor: Builds an ensemble sequentially, where each new tree tries to correct the errors of the previous one. Combines weak learners (shallow trees) into a strong predictive model through gradient-based optimization. Excellent for non-linear and complex datasets like California Housing. Learns patterns iteratively and fine-tunes predictions. Performs slightly below Random Forest here (R² ≈ 0.78), but with proper tuning (learning rate, n_estimators), it can even surpass it.
 
-○ Support Vector Regressor (SVR)
-Uses the concept of maximum margin from Support Vector Machines. Can use kernels (like RBF) to capture non-linear relationships. Needs feature scaling and can be slow for large datasets like California Housing (~20,000 rows). Performs decently (R² ≈ 0.73), showing it captures non-linearity but not as efficiently as ensemble trees.
+○ Support Vector Regressor (SVR): Uses the concept of maximum margin from Support Vector Machines. Can use kernels (like RBF) to capture non-linear relationships. Needs feature scaling and can be slow for large datasets like California Housing (~20,000 rows). Performs decently (R² ≈ 0.73), showing it captures non-linearity but not as efficiently as ensemble trees.
 
 Models Evaluation and Comparison:
 
